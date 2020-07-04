@@ -45,6 +45,9 @@ rfrek10<-sum(frek10$freq)
 #hasil total frekuensi tiap kelas####
 rfrek1 + rfrek2 + rfrek3 + rfrek4 + rfrek5 + rfrek6 + rfrek7 +rfrek8 + rfrek9 + rfrek10
 
+#Frekuensi Kumulatif
+cbind(freq=table(rio_xlsx$k5), Kumulatif=cumsum(table(rio_xlsx$k5)))
+
 # import excel FMB
 rio2_xlsx <- import("c:\\Users\\User\\Desktop\\FMB_Milano_Ery_Kevin.xlsx")  #untuk parameter di fungsi import, silahkan isi dengan lokasi file masing2
 head(rio2_xlsx)
