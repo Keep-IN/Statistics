@@ -49,7 +49,7 @@ rfrek1 + rfrek2 + rfrek3 + rfrek4 + rfrek5 + rfrek6 + rfrek7 +rfrek8 + rfrek9 + 
 rio2_xlsx <- import("c:\\Users\\User\\Desktop\\FMB_Milano_Ery_Kevin.xlsx")  #untuk parameter di fungsi import, silahkan isi dengan lokasi file masing2
 head(rio2_xlsx)
 
-#mencari tau nilai median, kuartil, mean######
+#mencari tau nilai median, kuartil, mean####
 summary(rio2_xlsx$Data)
 sd(rio2_xlsx$Data) #nilai standar deviasi
 
@@ -64,7 +64,7 @@ hist(rio2_xlsx$Data,
      col = "red",
      )
 
-?plot
+?plot 
 #membuat scatterplot dari FMB
 plot(rio2_xlsx$Data,
      main = "scatter-plot penjualan",
@@ -72,6 +72,7 @@ plot(rio2_xlsx$Data,
      ylab = "penjualan",
      col = "blue"
 )
+
 #membuat regresi
 scatter.smooth(x = rio2_xlsx$Hari, y = rio2_xlsx$Data,
                main = "Data~Hari"
